@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "U.S. Unemployment Rate",
+    "subtitle": [
+      "The Unemployment Rate in the the United States", " Source: FRED API"
+    ]
+  },
+  "description": "A chart showing US Unemployment Rate",
+  "data": {"url": "https://raw.githubusercontent.com/SophiePeabodyONS/SophiePeabodyONS.GitHub.io/main/data_FRED-UNRATE.json", "format":{"type": "json", "property": "observations"}},
+  "mark": {"type":"line",
+  "color": "#F79F79"},
+
+
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "title":""},
+    "y": {"field": "value", "type": "quantitative", "title":"Percent"}
+  },
+  "width": 400,
+  "height": 300
+}
