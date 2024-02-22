@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text":"Business Dynamism",
+    "subtitle": ["Author: Sophie", "Source: ONS"]},
+
+  "width": 400,
+  "height": 300,
+ 
+  "data": {"url": "https://raw.githubusercontent.com/SophiePeabodyONS/SophiePeabodyONS.GitHub.io/main/Business%20Dynamism%20Long%20Format.csv"},
+ 
+  "mark": "line",
+ 
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal", "title":"Year"},
+    "y": {"field": "Value", "type": "quantitative", "title":null},
+    "color": {"field": "Type of Firm", "type": "nominal"}
+  }
+}
